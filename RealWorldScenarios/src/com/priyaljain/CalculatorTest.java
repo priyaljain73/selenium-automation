@@ -47,4 +47,26 @@ public class CalculatorTest {
         Assert.assertEquals(actual, expected);
     }
 
+    @Test
+    public void testShouldCheckAdditionOfTwoNumbers() throws Exception {
+        element = driver.findElement(By.xpath(".//*[@id='content']/ul[1]/li[2]/a"));
+        element.click();
+        element = driver.findElement(By.name("t1"));
+        element.sendKeys("1");
+        element = driver.findElement(By.name("b1"));
+        element.sendKeys("3");
+        element = driver.findElement(By.name("t2"));
+        element.sendKeys("4");
+        element = driver.findElement(By.name("b2"));
+        element.sendKeys("3");
+        element = driver.findElement(By.xpath(".//*[@id='content']/table[1]/tbody/tr[4]/td/input[2]"));
+        element.click();
+        String actual1 = driver.findElement(By.xpath(".//*[@id='content']/table[6]/tbody/tr[1]/td[5]")).getText();
+        String actual2 = driver.findElement(By.xpath(".//*[@id='content']/table[6]/tbody/tr[3]/td[3]")).getText();
+        String expected1="5";
+        String expected2="3";
+        Assert.assertEquals(actual1, expected1);
+        Assert.assertEquals(actual2, expected2);
+    }
+
 }
