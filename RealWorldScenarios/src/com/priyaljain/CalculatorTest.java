@@ -1,4 +1,4 @@
-package com.company;
+package com.priyaljain;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -8,9 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
