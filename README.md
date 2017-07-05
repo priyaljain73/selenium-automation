@@ -1,31 +1,32 @@
 # selenium-automation
-##**Real life scenarios** automated using selenium
+ **Real life scenarios** automated using selenium
 
-##**Requirements and Setup** :
 
-###1.Install JDK on your machine and set path.
+  **Requirements and Setup** :
 
-###2.Download any IDE (Eclipse/IntelliJ).Here i have used IntelliJ IDEA 2017.1.3
+    1.Install JDK on your machine and set path.
 
-###3.Now download the latest Selenium Server Jar.(Version : 3.4.0)
+    2.Download any IDE (Eclipse/IntelliJ).Here i have used IntelliJ IDEA 2017.1.3
 
-#####Link : http://www.seleniumhq.org/download/
+    3.Now download the latest Selenium Server Jar.(Version : 3.4.0)
 
-###4.Add this as an extenal library of your project.
+      Link : http://www.seleniumhq.org/download/
 
-##**Test Cases** :
+    4.Add this as an extenal library of your project.
 
-###1.Testing Calculator Website - http://www.calculator.net/math-calculator.html
+  **Test Cases** :
 
-###  Written test cases to calculate sum of fraction and percentage calculator.
+    1.Testing **Calculator Website** - http://www.calculator.net/math-calculator.html
 
-###2.Testing Amazon
+      Written test cases to calculate sum of fraction and percentage calculator.
 
-###  Written several testcases for login,open cart,place a new order and add to cart,remove from cart.
+    2.Testing **Amazon**
 
-###3.Testing YouTube
+      Written several testcases for login,open cart,place a new order and add to cart,remove from cart.
 
-###  Test case opens link of a video and counts total views till date.
+    3.Testing **YouTube**
+
+      Test case opens link of a video and counts total views till date.
 
   
   
