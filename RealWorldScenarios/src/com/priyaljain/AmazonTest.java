@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class AmazonTest {
@@ -74,8 +76,11 @@ public class AmazonTest {
         driver.findElement(By.id("signInSubmit")).click();
         driver.findElement(By.id("nav-cart")).click();
         String s=driver.findElement(By.id("nav-cart-count")).getText();
-        if(s!=null)
-            driver.findElement(By.name("submit.delete.C37F534GRPJ869")).click();
+        List<WebElement> elements = driver.findElements(By.xpath("//input[@value='Delete']"));
+        for (int i=0; i < elements.size(); i++){
+            elements.get(i).click();
+            Thread.sleep(5000);
+        }
     }
 
 
